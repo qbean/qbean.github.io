@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel = "stylesheet" href = "css/reset.css">
+	<link rel = "stylesheet" href = "css/text.css">
+	<link rel = "stylesheet" href = "css/960_12_col.css">
+	<link rel = "stylesheet" href = "style.css">
+	<title>Home</title>
+</head>
+<body>
+
+<div class="container_12">
+	<header>
+		<h1>qbean</h1>
+		<nav>
+			<ul>
+				<li><a href="index.html" class="selected">Home</a></li>
+				<li><a href="http://imgur.com/a/z6Jyi">Portfolio</a></li>
+				<li><a href="http://steamcommunity.com/id/q-bean">Contact</a></li>
+			</ul> 
+		</nav>
+
+			<img src="img/banner.gif" alt"http://steamcommunity.com/id/q-bean">
+
+	</header>
+
+	<div class="main">
+		<div class="grid_3">
+			<h2><a href="http://imgur.com/a/z6Jyi">Portfolio</a></h2>
+			<p>This is where I showcase my artwork that I have created in the past. The collection includes both templates and custom artwork that were created by me. The templates are reusable and sold at a cheaper price than custom artwork. Feel free to look through and gain inspiration. <br> (clicking 'portfolio' will direct you)</p>
+		</div>
+		<div class="grid_3">
+			<h2><a href="http://steamcommunity.com/id/q-bean">Contact</a></h2>
+			<p>These are some ways to contact me if you are interested in some artwork or curious about a pricecheck. <br> <br> Steam: steamcommunity.com/id/q-bean <br>(clicking 'contact' will direct you) <br> <br> Discord: qbean#2871</p>
+		</div>
+		<div class="grid_6">
+			<h2>FAQ</h2>
+			<p> <b>How do I request artwork?</b> <br> After adding me, describe to me exactly what you want - that means positioning, effects, and overall goal of the animation. <br><br><b>How much do you charge?</b><br> I am currently charging 2 to 4 CS:GO keys / $4 to $9. The price is determined by the difficulty of the piece. The lowest price is for the templates I made that I reuse if the client desires. <br><br> <b>How will I receive my artwork?</b><br> After finishing the animation, I will send you a watermarked version and continue changing it to your liking. Once you are satisfied, I will accept the payment via steam or paypal then send you the unwatermarked version for download.</p>
+		</div>
+	</div>
+
+
+<footer>
+	<script type="text/javascript">
+tday=new Array("Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday");
+tmonth=new Array("January","February","March","April","May","June","July","August","September","October","November","December");
+
+function GetClock(){
+var d=new Date();
+var nday=d.getDay(),nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+var nhour=d.getHours(),nmin=d.getMinutes(),ap;
+if(nhour==0){ap=" AM";nhour=12;}
+else if(nhour<12){ap=" AM";}
+else if(nhour==12){ap=" PM";}
+else if(nhour>12){ap=" PM";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+
+document.getElementById('clockbox').innerHTML=""+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+" "+nhour+":"+nmin+ap+"";
+}
+
+window.onload=function(){
+GetClock();
+setInterval(GetClock,1000); 
+}
+</script>
+<div id="clockbox"></div>
+<p> . </p>
+</footer>
+</div>
+</html>
